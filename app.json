@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "BF pingpong",
+    "name": "PingPong",
     "slug": "basicfit-pingpong",
     "version": "1.1.0",
     "orientation": "portrait",
-    "scheme": "basicfitpingpong",
+    "scheme": "bfpingpong",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "icon": "./assets/images/icon.png",

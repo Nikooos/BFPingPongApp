@@ -1,50 +1,171 @@
-# Welcome to your Expo app 👋
+# BF Ping Pong App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A mobile application for managing ping pong games and tournaments, built with Expo and React Native.
 
-## Get started
+## 🏓 Features
 
-1. Install dependencies
+- Track ping pong matches
+- Player statistics
+- Tournament management
+- Real-time scoring
+- Match history
+
+## 📱 Tech Stack
+
+- **Framework**: Expo (Managed Workflow)
+- **Language**: JavaScript/TypeScript
+- **Platform**: iOS & Android
+- **Linting**: ESLint with Expo config
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (16.x or higher)
+- npm or yarn
+- Expo CLI
+- iOS Simulator (for iOS development)
+- Android Studio/Android Emulator (for Android development)
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yourusername/BFPingPongApp.git
+   cd BFPingPongApp
+   ```
+
+2. Install dependencies:
 
    ```bash
    npm install
    ```
 
-2. Start the app
+3. Install Expo CLI globally (if not already installed):
+   ```bash
+   npm install -g @expo/cli
+   ```
+
+### Running the App
+
+1. Start the development server:
 
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+2. Open the app on your device:
+   - **iOS**: Press `i` to open iOS Simulator
+   - **Android**: Press `a` to open Android Emulator
+   - **Physical Device**: Scan QR code with Expo Go app
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### Available Scripts
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- `npm start` - Start the Expo development server
+- `npm run android` - Run on Android device/emulator
+- `npm run ios` - Run on iOS device/simulator
+- `npm run web` - Run in web browser
+- `npm run lint` - Run ESLint
+- `npm run lint:fix` - Fix ESLint issues automatically
 
-## Get a fresh project
+## 📁 Project Structure
 
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+BFPingPongApp/
+├── app/                    # App screens and navigation
+├── components/             # Reusable components
+├── assets/                 # Images, fonts, etc.
+├── constants/              # App constants
+├── hooks/                  # Custom React hooks
+├── utils/                  # Utility functions
+├── app.json               # Expo configuration
+├── package.json           # Dependencies and scripts
+└── eslint.config.js       # ESLint configuration
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 🛠 Development
 
-## Learn more
+### Code Style
 
-To learn more about developing your project with Expo, look at the following resources:
+This project uses ESLint with Expo's recommended configuration. Run linting with:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+npm run lint
+```
 
-## Join the community
+### Environment Variables
 
-Join our community of developers creating universal apps.
+Create a `.env` file in the root directory for environment-specific variables:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```
+EXPO_PUBLIC_API_URL=your_api_url_here
+```
+
+## 📦 Building for Production
+
+### Development Build
+
+```bash
+npx expo build
+```
+
+### Production Build
+
+```bash
+# For iOS
+npx expo build:ios
+
+# For Android
+npx expo build:android
+```
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🐛 Troubleshooting
+
+### Common Issues
+
+**Project won't start:**
+
+```bash
+# Clear cache and restart
+npx expo start --clear
+```
+
+**Dependency issues:**
+
+```bash
+# Reinstall dependencies
+rm -rf node_modules
+npm install
+npx expo install --fix
+```
+
+**iOS/Android build issues:**
+
+- Ensure you have the latest Expo CLI
+- Check that your development environment is properly set up
+- Verify app.json configuration
+
+## 📞 Support
+
+If you encounter any issues, please:
+
+1. Check the troubleshooting section above
+2. Search existing issues on GitHub
+3. Create a new issue with detailed information
+
+---
+
+Made with ❤️ for ping pong enthusiasts

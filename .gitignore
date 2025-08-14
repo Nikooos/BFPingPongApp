@@ -75,7 +75,6 @@ jspm_packages/
 
 # Additional Expo/React Native
 *.orig.*
-web-build/
 *.tar.gz
 
 # Flipper
@@ -86,3 +85,16 @@ flipper-config.json
 
 # ngrok
 /ngrok
+
+# Security
+*.p8
+*.p12
+*.key
+*.mobileprovision
+google-services.json
+GoogleService-Info.plist
+
+# Temporary files
+*.tmp
+*.temp
+.expo-shared/

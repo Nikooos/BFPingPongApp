@@ -13,9 +13,10 @@ yarn-debug.log*
 yarn-error.log*
 
 # React Native
-.expo/
 .expo-shared/
 __generated__/
+android/
+ios/
 
 # macOS
 .DS_Store
@@ -28,7 +29,7 @@ __generated__/
 # Vercel
 .vercel
 
-# Typescript
+# TypeScript
 *.tsbuildinfo
 
 # IDE
@@ -72,7 +73,16 @@ jspm_packages/
 # CocoaPods
 /ios/Pods/
 
-# Expo
-.expo/*
+# Additional Expo/React Native
+*.orig.*
+web-build/
+*.tar.gz
+
+# Flipper
+flipper-config.json
+
+# Metro
+.metro-health-check*
+
 # ngrok
 /ngrok
